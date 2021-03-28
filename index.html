@@ -1,23 +1,29 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Todo App</title>
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
-  </head>
-  <body>
-    <div class="header">
-      <img class="header-image" src="./eisenhower-matrix.jpg">
-        <a class="header-link" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
-    </div>
-    <div class="container">
+
+<head>
+  <title>Todo App</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
+</head>
+
+<body>
+  
+  <header class="header">
+    <img class="header-image" src="./eisenhower-matrix.jpg">
+    <a class="header-link" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
+  </header>
+
+  <div class="container">
+    <section class="tasks">
       <p id="topSectionForAddingElementToList">
         <label for="new-task">Add Item</label>
         <div class="task-row-wrapper">
-          <input id="new-task"class="task" type="text">
+          <input id="new-task" class="task" type="text">
           <button>Add</button>
         </div>
       </p>
+
       <h3>Todo</h3>
       <ul id="incompleteTasks">
         <li>
@@ -29,6 +35,7 @@
             <img src="./remove.svg" alt="Remove button image">
           </button>
         </li>
+
         <li class="editMode">
           <input type="checkbox">
           <label class="task">Go Shopping</label>
@@ -39,6 +46,7 @@
           </button>
         </li>
       </ul>
+
       <h3>Completed</h3>
       <ul id="completed-tasks">
         <li>
@@ -51,7 +59,10 @@
           </button>
         </li>
       </ul>
-    </div>
-    <script src="app.js"></script>
-  </body>
+
+    </section>
+  </div>
+  <script src="app.js"></script>
+</body>
+
 </html>
