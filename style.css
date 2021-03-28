@@ -101,7 +101,7 @@ label[for="new-task"] {
 #new-task {
   width: 318px;
 }
-p > button:hover {
+.task-row-wrapper button:hover {
   color: #0fc57c;
 }
 
@@ -119,7 +119,7 @@ li > * {
   vertical-align: middle;
 }
 
-li > input[type="checkbox"] {
+input[type="checkbox"] {
   margin: 0 10px;
 }
 
