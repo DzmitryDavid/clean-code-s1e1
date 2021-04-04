@@ -8,38 +8,38 @@
 <body>
   <header class="header">
     <img 
-        class="header-image" 
+        class="header__image" 
         src="./eisenhower-matrix.jpg" 
         alt="Eisenhower-matrix picture">
     <a 
-        class="header-link" 
+        class="header__link" 
         href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?
     </a>
   </header>
 
-  <div class="centered-container">
+  <main class="container">
     <section class="add">
-      <div class="add-task-wrapper">
+      <div class="add-task__wrapper">
         <label class="add__label" for="new-task">Add Item</label>
         <div class="add__inputs-wrapper">
           <input 
               id="new-task" 
               class="input add__input" 
               type="text">
-          <button class="add__btn">Add</button>
+          <button class="btn add__btn">Add</button>
         </div>
       </div>
     </section>
 
     <section class="task">
       <h3 class="title">Todo</h3>
-      <ul id="incomplete-tasks" class="task__items">
-        <li class="task__item">
-          <input type="checkbox">
+      <ul id="incomplete-tasks" class="task__list">
+        <li class="task__list-item">
+          <input class="input__checkbox" type="checkbox">
           <label class="label task__label">Pay Bills</label>
           <input type="text" class="input task__input">
-          <button class="edit">Edit</button>
-          <button class="delete">
+          <button class="btn btn-edit">Edit</button>
+          <button class="btn btn-delete">
             <img 
                 class="task__image" 
                 src="./remove.svg" 
@@ -47,15 +47,15 @@
           </button>
         </li>
 
-        <li class="task__item edit-mode">
-          <input type="checkbox">
+        <li class="task__list-item edit-mode">
+          <input class="input__checkbox" type="checkbox">
           <label class="label task__label">Go Shopping</label>
           <input 
               type="text" 
               value="Go Shopping" 
               class="input task__input ">
-          <button class="edit">Save</button>
-          <button class="delete">
+          <button class="btn btn-edit">Save</button>
+          <button class="btn btn-delete">
             <img 
               class="task__image" 
               src="./remove.svg" 
@@ -65,13 +65,13 @@
       </ul>
 
       <h3 class="title">Completed</h3>
-      <ul id="completed-tasks" class="task__items">
-        <li class="task__item">
-          <input type="checkbox" checked>
+      <ul id="completed-tasks" class="task__list">
+        <li class="task__list-item">
+          <input class="input__checkbox" type="checkbox" checked>
           <label class="label task__label">See the Doctor</label>
           <input type="text" class="input task__input">
-          <button class="edit">Edit</button>
-          <button class="delete">
+          <button class="btn btn-edit">Edit</button>
+          <button class="btn btn-delete">
             <img 
                 class="task__image" 
                 src="./remove.svg" 
@@ -81,7 +81,7 @@
       </ul>
 
     </section>
-  </div>
+  </main>
   <script src="app.js"></script>
 </body>
 </html>
